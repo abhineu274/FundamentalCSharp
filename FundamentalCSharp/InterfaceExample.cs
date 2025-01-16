@@ -83,5 +83,5 @@ namespace FundamentalCSharp
 }
 
 /*
- * Real world use case - public class ReceiptsCommandDataAccess : DataAccessBase, IReceiptsCommandDataAccess
+ * Real world use case - public class ReceiptsCommandDataAccess : DataAccessBase, IReceiptsCommandDataAccess 
  */
