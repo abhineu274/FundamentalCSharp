@@ -137,6 +137,11 @@ namespace FundamentalCSharp
             {
                 Console.WriteLine(item.CustomerName + " - " + item.Product);
             }
+
+            //IQueryable - used for querying data from a database
+            //Deferred Execution - Linq queries are executed only when the result is needed
+            IQueryable<int> queryableList = list.AsQueryable(); //AsQueryable() is a method in Linq that converts a list to an IQueryable
+
         }
     }
 }
