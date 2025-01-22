@@ -1,0 +1,99 @@
+
+ LINQ Methods with Examples
+
+ 1. Filtering
+- Where: Filters elements based on a condition.
+
+var adults = people.Where(person => person.Age >= 18);
+
+
+ 2. Projection
+- Select: Projects each element into a new form.
+
+var names = people.Select(person => person.Name);
+
+
+ 3. Sorting
+- OrderBy / OrderByDescending: Sorts elements in ascending/descending order.
+
+var sortedByName = people.OrderBy(person => person.Name);
+var sortedByAgeDescending = people.OrderByDescending(person => person.Age);
+
+
+ 4. Aggregation
+- Sum, Average, Min, Max, Count: Performs aggregation on a collection.
+
+int total = numbers.Sum();
+double average = numbers.Average();
+int min = numbers.Min();
+int max = numbers.Max();
+int count = numbers.Count();
+
+
+ 5. Set Operations
+- Distinct: Removes duplicate elements.
+- Union, Intersect, Except: Performs set operations on two collections.
+
+var distinctNumbers = numbers.Distinct();
+var unionNumbers = numbers1.Union(numbers2);
+var commonNumbers = numbers1.Intersect(numbers2);
+var exceptNumbers = numbers1.Except(numbers2);
+
+
+ 6. Element Operations
+- First, FirstOrDefault: Returns the first element or default value.
+- Single, SingleOrDefault: Ensures a single element exists.
+- Last, LastOrDefault: Returns the last element or default value.
+
+var firstEven = numbers.First(num => num % 2 == 0);
+var singleElement = numbers.Single(num => num == 5);
+var lastEven = numbers.Last(num => num % 2 == 0);
+
+
+ 7. Quantifiers
+- Any: Checks if any element satisfies a condition.
+- All: Checks if all elements satisfy a condition.
+
+bool hasNegative = numbers.Any(num => num < 0);
+bool allPositive = numbers.All(num => num > 0);
+
+
+ 8. Grouping
+- GroupBy: Groups elements by a specified key.
+
+var groupedByAge = people.GroupBy(person => person.Age);
+foreach (var group in groupedByAge)
+{
+    Console.WriteLine($"Age: {group.Key}");
+    foreach (var person in group)
+    {
+        Console.WriteLine($" - {person.Name}");
+    }
+}
+
+
+ 9. Joining
+- Join: Performs an inner join on two collections.
+
+var joinResult = people.Join(departments,
+                             person => person.DepartmentId,
+                             dept => dept.Id,
+                             (person, dept) => new { person.Name, dept.Name });
+
+
+ 10. Concatenation
+- Concat: Concatenates two collections.
+
+var allNumbers = numbers1.Concat(numbers2);
+
+
+ 11. Deferred Execution
+- Query is not executed until enumerated.
+
+var evenNumbers = numbers.Where(num => num % 2 == 0); // Deferred execution
+
+
+ 12. Immediate Execution
+- ToList, ToArray: Executes the query immediately.
+
+var evenNumbersList = numbers.Where(num => num % 2 == 0).ToList();
