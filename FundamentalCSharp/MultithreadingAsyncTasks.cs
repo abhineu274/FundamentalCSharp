@@ -44,7 +44,8 @@ namespace FundamentalCSharp
 
             Task<int> taskB = PrintB(); //taskB is a Task<int> type
             Console.WriteLine("outside of printB");
-            await taskB; //wait for the task to complete
+            await taskB; //wait for the task to complete - "await is don't wait?"
+            //"Wait for this task to finish, but don't block the current thread. Resume execution here when the task is done."
             Console.WriteLine("result of taskB: " + taskB.Result); //taskB.Result will give the result of the task
             //Output - PrintB 0,1,2,3,4 outside of printB, <5 seconds delay> result of taskB: 2
             //So, this will not wait for the task to complete and will move furthur
