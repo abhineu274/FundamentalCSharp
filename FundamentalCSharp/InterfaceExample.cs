@@ -84,4 +84,10 @@ namespace FundamentalCSharp
 
 /*
  * Real world use case - public class ReceiptsCommandDataAccess : DataAccessBase, IReceiptsCommandDataAccess 
+ * 
+ * 
+ * Interfaces and Diamond Problem:
+ * With interfaces, the diamond problem is resolved because interfaces do not have state or implementation.
+ * But with C# 8.0 interfaces can have default implementations, which can lead to ambiguity if multiple interfaces provide the same method with different implementations.
+ * To resolve this ambiguity, we can explicitly implement the interface method in the derived class.
  */

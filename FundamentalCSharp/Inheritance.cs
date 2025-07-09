@@ -88,4 +88,8 @@ namespace FundamentalCSharp
  * 
  * sealed - used to declare a class that cannot be inherited from.
  * 
+ * 
+ * Diamond Problem - occurs when a class inherits from two classes that have a common base class, leading to ambiguity in method resolution.
+ * Thats why C# does not support multiple inheritance directly, but it can be achieved using interfaces.
+ * 
  */

@@ -61,6 +61,8 @@ namespace FundamentalCSharp
                 shape.Draw(); //Drawing Shape
                 Circle circle = new Circle();
                 circle.Draw(); //Drawing Circle
+                Shape circle2 = new Circle(); //this is runtime polymorphism
+                circle2.Draw(); //Drawing Circle
                 Rectangle rectangle = new Rectangle();
                 rectangle.Draw(); //Drawing Rectangle
             }
