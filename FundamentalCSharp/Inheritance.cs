@@ -61,7 +61,7 @@ namespace FundamentalCSharp
  * 
  * *Interfaces have only public and protected access modifiers, no private or internal access modifiers.
  * 
- * 
+ *  
  * Types of Inheritance:
  * 1. Single Inheritance - A class inherits from one base class.
  * 2. Multiple Inheritance - A class inherits from multiple base classes (not supported in C# directly, but can be achieved using interfaces).
@@ -81,6 +81,9 @@ namespace FundamentalCSharp
  * virtual - used to declare a method that can be overridden in derived classes.
  * virtual method can have a body and can be overridden in derived classes using the override keyword.
  * virtual keyword is declared in abstract class or base class, and it allows derived classes to provide their own implementation of the method.
+ * 
+ * a overriden method can be virtual or abstract
+ * abstract vs virtual - it is mandatory to override an abstract method in a derived class, while it is optional to override a virtual method in a derived class.
  * 
  * 
  * sealed - used to declare a class that cannot be inherited from.
