@@ -46,3 +46,43 @@ namespace FundamentalCSharp
         }
     }
 }
+
+
+/*
+ * Access Modifiers:
+ * Public - accessible from anywhere
+ * Private - accessible only within the class
+ * Protected - accessible within the class and its derived classes
+ * Internal - accessible within the same assembly
+ * Protected Internal - accessible within the same assembly and derived classes
+ * Private Protected - accessible within the same class and derived classes, but not accessible from outside the class
+ * file level - accessible within the same file
+ * 
+ * 
+ * *Interfaces have only public and protected access modifiers, no private or internal access modifiers.
+ * 
+ * 
+ * Types of Inheritance:
+ * 1. Single Inheritance - A class inherits from one base class.
+ * 2. Multiple Inheritance - A class inherits from multiple base classes (not supported in C# directly, but can be achieved using interfaces).
+ * 3. Multilevel Inheritance - A class inherits from a base class, which in turn inherits from another base class.
+ * 4. Hierarchical Inheritance - Multiple classes inherit from a single base class.
+ * 5. Hybrid Inheritance - A combination of two or more types of inheritance (not supported in C# directly, but can be achieved using interfaces).
+ * 
+ * 
+ * Inheritance important keywords:
+ * abstract - used to declare a class that cannot be instantiated and can only be inherited.
+ * abstract method - a method without a body that must be implemented in derived classes.
+ * abstract class can have constructors, properties, and methods, but cannot be instantiated directly.
+ * abstract class can have concrete methods (methods with a body) and abstract methods (methods without a body).
+ * 
+ * override - to overide an abstract method in a derived class, we use the override keyword.
+ * 
+ * virtual - used to declare a method that can be overridden in derived classes.
+ * virtual method can have a body and can be overridden in derived classes using the override keyword.
+ * virtual keyword is declared in abstract class or base class, and it allows derived classes to provide their own implementation of the method.
+ * 
+ * 
+ * sealed - used to declare a class that cannot be inherited from.
+ * 
+ */
