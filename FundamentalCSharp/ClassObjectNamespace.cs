@@ -3,7 +3,7 @@ namespace FundamentalCSharp
 {
     internal class Car
     {
-        public string Model { get; set; }
+        public string Model { get; set; }               //class feilds can be public, private, protected, internal
         public string Make { get; set; }
         public int Year { get; set; }
         public DateTime dateTime { get; set; }

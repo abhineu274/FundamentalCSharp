@@ -21,6 +21,8 @@ namespace FundamentalCSharp
             sb.Append(" World");
             sb.Append("!");
             Console.WriteLine(sb); //Hello World!
+            Console.WriteLine(sb.Length); //13 - length of the string
+            sb[0] = 'N'; //-> Nope - StringBuilder does not support indexing for modification
 
             Console.WriteLine(sb[0]); //H - accessing the character at index 0
 

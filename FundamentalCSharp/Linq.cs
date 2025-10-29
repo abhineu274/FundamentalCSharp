@@ -97,7 +97,7 @@ namespace FundamentalCSharp
 
             var subjects = students.SelectMany(x => x.Subjects).Distinct(); //SelectMany() is a method in Linq that flattens a list of lists into a single list
 
-            foreach (var subject in subjects)
+            foreach (var subject in subjects) //o/p -> Math, Science, English, History, Art
             {
                 Console.WriteLine(subject);
             }

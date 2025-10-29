@@ -35,6 +35,8 @@ namespace FundamentalCSharp
         {
             Action<int> action = Print;
             action(10);
+            Action<int> action7 = (int a) => Console.WriteLine(a); //lambda expression - Action function takes only one parameter and does not return a value
+            action7(20);
 
             Func<int, int> func = (int a) => a * a; //lambda expression - Func function takes only one parameter and returns a value
             Console.WriteLine(func(10));

@@ -59,6 +59,18 @@
              * 
              */
 
+            /*****              
+             * It is far better to use TryParse than to use Convert.ToInt32 or Int32.Parse
+             * TryParse will not throw an exception if the conversion fails
+             * TryParse() returns a boolean value indicating whether the conversion succeeded or failed
+             * int.TryParse(string s, out int result) {cw(result);}
+             * double.TryParse(string s, out double result) {cw(result);}
+             * 
+             * If(int.TryParse(str, out int result)){}
+             * else{}
+             * 
+             *****/
+
             //Ref, Out, In
             int myNumber = 10;
             AddFive(ref myNumber);

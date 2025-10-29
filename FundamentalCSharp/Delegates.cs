@@ -51,3 +51,32 @@ namespace FundamentalCSharp
         }
     }
 }
+
+/*
+using System;
+
+namespace DelegateExample
+{
+    // Declare a delegate
+    public delegate void Notify(string message);
+
+    class Program
+    {
+        // Method matching delegate signature
+        public static void SendMessage(string msg)
+        {
+            Console.WriteLine("Message: " + msg);
+        }
+
+        static void Main()
+        {
+            // Assign method to delegate
+            Notify notify = SendMessage;
+
+            // Invoke delegate
+            notify("Hello Delegate!");
+        }
+    }
+}
+
+ */
